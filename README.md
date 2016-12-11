@@ -1,4 +1,4 @@
-# Календарь на O2
+# Календарь
 
 Портирован из [web4](https://github.yandex-team.ru/serp/web4/tree/dev/contribs/calendar).
 
