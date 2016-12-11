@@ -1,6 +1,5 @@
 # Календарь
 
-Портирован из [web4](https://github.yandex-team.ru/serp/web4/tree/dev/contribs/calendar).
 
 ![calendar](https://github.com/bem-hackaton-12-16/calendar/blob/master/preview/desktop.png)
 <br/>
