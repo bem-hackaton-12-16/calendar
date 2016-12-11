@@ -2,7 +2,7 @@
 
 Портирован из [web4](https://github.yandex-team.ru/serp/web4/tree/dev/contribs/calendar).
 
-![calendar](https://github.yandex-team.ru/search-interfaces/o2-calendar/raw/master/preview/desktop.png)
+![calendar](https://github.com/bem-hackaton-12-16/calendar/blob/master/preview/desktop.png)
 <br/>
 На iOS и Android используется системный календарь.
 
@@ -64,4 +64,4 @@
     val: '11.11.2015'
 }
 ```
-![calendar](https://github.yandex-team.ru/search-interfaces/o2-calendar/raw/master/preview/limits.png)
+![calendar](https://github.com/bem-hackaton-12-16/calendar/blob/master/preview/limits.png)
