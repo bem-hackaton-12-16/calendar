@@ -1,4 +1,4 @@
-# Календарь
+# Календарь [WIP] 
 
 
 ![calendar](https://github.com/bem-hackaton-12-16/calendar/blob/master/preview/desktop.png)
