@@ -1,7 +1,7 @@
 /**
  * @module calendar
  */
-modules.define('calendar', ['i-bem__dom', 'BEMHTML', 'jquery'], function(provide, BEMDOM, BEMHTML, $) {
+modules.define('calendar', ['i-bem-dom', 'BEMHTML', 'jquery', 'popup'], function(provide, bemDom, BEMHTML, $, Popup) {
 
 function compareMonths(a, b) {
     if(a.getFullYear() > b.getFullYear()) {
@@ -51,22 +51,22 @@ function parseDateParts(str) {
  * @augments control
  * @bem
  */
-provide(BEMDOM.decl({ block : this.name }, /** @lends calendar.prototype */{
+provide(bemDom.declBlock('calendar', /** @lends calendar.prototype */{
     onSetMod: {
         js: function() {
-            this.__base.apply(this, arguments);
+			this.__base.apply(this, arguments);
 
-            this._val = null;
+			this._val = null;
 
-            this._popup = this.domElem.bem('popup');
+			this._popup = this.findMixedBlock(Popup);
 
-            this._month = this._getToday();
-            this._month.setDate(1);
+			this._month = this._getToday();
+			this._month.setDate(1);
 
-            this.setLimits(
-                this.params.earlierLimit,
-                this.params.laterLimit
-            );
+			this.setLimits(
+				this.params.earlierLimit,
+				this.params.laterLimit
+			);
         }
     },
 

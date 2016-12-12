@@ -1,5 +1,6 @@
 block('calendar').mix()({
     block: 'popup',
+	js: true,
     mods: {
         'has-calendar': true,
         target: 'anchor',
