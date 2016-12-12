@@ -175,9 +175,6 @@ function getTouchPads() {
         { path: 'libs/bem-core/touch.blocks', check: false },
         { path: 'libs/bem-components/common.blocks', check: false },
         { path: 'libs/bem-components/design/common.blocks', check: false },
-        { path: 'libs/bem-components/touch.blocks', check: false },
-        { path: 'libs/bem-components/design/touch.blocks', check: false },
-        { path: 'libs/bem-components/design/touch-pad.blocks', check: false },
         'common.blocks',
         'touch.blocks'
     ];
@@ -190,8 +187,6 @@ function getTouchPhones() {
         { path: 'libs/bem-components/common.blocks', check: false },
         { path: 'libs/bem-components/design/common.blocks', check: false },
         { path: 'libs/bem-components/touch.blocks', check: false },
-        { path: 'libs/bem-components/design/touch.blocks', check: false },
-        { path: 'libs/bem-components/design/touch-phone.blocks', check: false },
         'common.blocks',
         'touch.blocks',
         'touch-phone.blocks'

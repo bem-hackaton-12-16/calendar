@@ -1,7 +1,7 @@
 /**
  * @module input
  */
-modules.define('input', ['i-bem-dom', 'jquery', 'dom', 'calendar'], function(provide, bemDom, $, dom, input, Calendar ) {
+modules.define('input', ['i-bem-dom', 'jquery', 'dom', 'calendar'], function(provide, bemDom, $, dom, Calendar, Input) {
 
 /**
  * @exports
@@ -9,8 +9,8 @@ modules.define('input', ['i-bem-dom', 'jquery', 'dom', 'calendar'], function(pro
  * @augments control
  * @bem
  */
-provide(input.declMod({ modName: 'has-calendar' }, /** @lends input.prototype */{
-    onSetMod: {
+provide(Input.declMod({ modName: 'has-calendar', modVal: true }, /** @lends input.prototype */{
+	onSetMod: {
 		js: function() {
 			this.__base.apply(this, arguments);
 
@@ -62,11 +62,11 @@ provide(input.declMod({ modName: 'has-calendar' }, /** @lends input.prototype */
 				}
 			});
 		}
-    },
-    destruct: function() {
-        this._calendar.destruct();
+	},
+	destruct: function() {
+		this._calendar.destruct();
 
-        this.__base.apply(this, arguments);
-    }
+		this.__base.apply(this, arguments);
+	}
 }));
 });
